@@ -1,0 +1,125 @@
+@import 'media.scss';
+
+body {
+    .header {
+        .header__container {
+            display: grid;
+            grid-template-columns: 200px auto 130px;
+            grid-template-rows: 80px;
+            .header__menu {
+                display: grid;
+                grid-template-columns: repeat(5, auto);
+                justify-content: space-between;
+            }
+            .messager {
+                display: grid;
+                grid-template-columns: repeat(3, 30px);
+                grid-gap: 20px;
+            }
+        }
+    }
+    .portf {
+        .portf__container {
+            display: grid;
+            grid-template-areas: 'left left right-top right-top' 'left left right-left right-right';
+            grid-template-rows: 1fr 257px;
+            grid-gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+            
+            .portf__left {
+                grid-area: left;
+            }
+            .portf__content-1 {
+                grid-area: right-top;
+            }
+            .portf__content-2 {
+                grid-area: right-left;
+            }
+            .portf__content-3 {
+                grid-area: right-right;
+            }
+        }
+    }
+    .about {
+        .about__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+        }
+    }
+    .projects {
+        .projects__container {
+            .projects__grid {
+                display: grid;
+                grid-gap: 30px;
+                grid-template-columns: repeat(24, 1fr);
+                .projects__1 {
+                    grid-column: span 4;
+                }
+                .projects__2 {
+                    grid-column: span 4;
+                }
+                .projects__3 {
+                    grid-column: span 4;
+                }
+                .projects__4 {
+                    grid-column: span 12;
+                }
+                .projects__5 {
+                    grid-column: span 12;
+                }
+                .projects__6 {
+                    grid-column: span 6;
+                }
+                .projects__7 {
+                    grid-column: span 6;
+                }
+            }
+
+        }
+    }
+    .contacts {
+        .contacts__container {
+            .contacts__grid {
+                display: grid;
+                grid-template-columns: repeat(24, 1fr);
+                grid-gap: 30px;
+                .contacts__map {
+                    grid-column: span 16;
+                }
+                .contants__request {
+                    grid-column: span 8;
+                }
+            }
+        }
+    }
+    .footer {
+        .footer__container {
+            display: grid;
+            grid-template-columns: repeat(24, 1fr);
+            grid-gap: 30px;
+            .footer__logo {
+                grid-column: span 8;
+            }
+            .footer__info {
+                grid-column: span 8;
+            }
+            .footer__links {
+                grid-column: span 4;
+                grid-column-end: 26;
+                .footer__social {
+                    display: grid;
+                    grid-template-columns: repeat(16, 1fr);
+                    .footer__school-friend {
+                        grid-column: span 3;
+                        grid-column-end: 8;
+                    }
+                    .footer__vk {
+                        grid-column: span 3;
+                        grid-column-end: 12;
+                    }
+                }
+            }
+        }
+    }
+}
